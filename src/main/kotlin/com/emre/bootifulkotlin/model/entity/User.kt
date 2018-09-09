@@ -5,4 +5,4 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
 @Entity
-data class User(@Id @GeneratedValue val id: Long, val username: String, val email: String)
+data class User(@Id @GeneratedValue val id: Long? = 0, val username: String = "", val email: String = "")
